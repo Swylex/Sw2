@@ -1,0 +1,100 @@
+-- NERF GLOCKK Tool Script for Roblox
+local v0 = {} -- this array is empty
+local v1 = {} -- this array is empty
+local v2 = 1
+v1.single = v2
+v2 = 2
+v1.auto = v2
+v0.mode = v1
+
+v1 = {"ToolName", "EquipTime", "isShotgun", "BulletSettings", "AmmoSettings", "RecoilSettings"}
+v2 = "NERF GLOCKK"
+v1.ToolName = v2
+v2 = 0.7
+v1.EquipTime = v2
+v2 = false
+v1.isShotgun = v2
+
+v2 = {"Acceleration", "Speed", "FireRate", "MuzzleFlash_B", "Damage", "Force", "ShellsPerShot", "Type", "HoleSize", "Color", "Shell", "ShellVelocity", "MaxSpread"}
+local v3 = Vector3.new(0, -100, 0)
+v2.Acceleration = v3
+v3 = 2000
+v2.Speed = v3
+v3 = 9
+v2.FireRate = v3
+v3 = 10
+v2.MuzzleFlash_B = v3
+v3 = 99999999999
+v2.Damage = v3
+v3 = 0
+v2.Force = v3
+v3 = 5
+v2.ShellsPerShot = v3
+v3 = "_bullet"
+v2.Type = v3
+v3 = 0.5
+v2.HoleSize = v3
+
+v3 = Color3.fromRGB
+local v4 = 77
+local v5 = 23
+local v6 = 255
+v3 = v3(v4, v5, v6)
+v2.Color = v3
+
+v3 = "Model"
+v2.Shell = v3
+v3 = 5
+v2.ShellVelocity = v3
+v3 = 3
+v2.MaxSpread = v3
+v1.BulletSettings = v2
+
+v2 = {"Ammo", "StoredMaximum", "mode", "modeAvailable", "ReloadTime"}
+v3 = 15
+v2.Ammo = v3
+v3 = 330
+v2.StoredMaximum = v3
+
+local v4 = v0.mode
+v3 = v4.single
+v2.mode = v3
+
+v3 = {} -- this array has (2) indexes by default
+local v5 = v0.mode
+local v6 = v0.mode.auto
+v3[1] = v4.single
+v3[2] = v6
+v2.modeAvailable = v3
+v3 = 2.5
+v2.ReloadTime = v3
+v1.AmmoSettings = v2
+
+v2 = {"RecoilAmount", "RecoilSpeed", "RecoilDamp", "RecoilA_X", "RecoilA_Y", "RecoilA_Z", "XMin", "YMin", "ZMin", "XMax", "YMax", "ZMax"}
+v3 = 4
+v2.RecoilAmount = v3
+v3 = 20
+v2.RecoilSpeed = v3
+v3 = 0.75
+v2.RecoilDamp = v3
+v3 = 5
+v2.RecoilA_X = v3
+v3 = 5
+v2.RecoilA_Y = v3
+v3 = 5
+v2.RecoilA_Z = v3
+v3 = -2
+v2.XMin = v3
+v3 = 7
+v2.YMin = v3
+v3 = -2
+v2.ZMin = v3
+v3 = 2
+v2.XMax = v3
+v3 = 7
+v2.YMax = v3
+v3 = 2
+v2.ZMax = v3
+v1.RecoilSettings = v2
+
+return v1
